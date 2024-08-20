@@ -14,7 +14,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
         <nav className='flax flex-col gap-4'>
             <Link href='/'
             className='mb-12
-            cursoe-pointer
+            cursoe-pointer flex
             items-center gap-2'>
                 <Image 
                 src='/icons/logo.svg'
@@ -42,13 +42,16 @@ const Sidebar = ({ user }: SiderbarProps) => {
                                     'brightness-[3] invert-0': isActive
                                 })}
                             />
-
                         </div>
+                        <p className={cn('sidebar-label', {'!text-white': isActive})}>
+                          {item.label}  
+                        </p>
                     </Link>
                 )
             })}
 
         </nav>
+        FOOTER
 
     </section>
   )
