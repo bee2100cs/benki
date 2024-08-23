@@ -71,7 +71,7 @@ const AuthForm = ({ type }: {type: string}) => {
       <header className='flex flex-col gap-5 md:gp-8'>
         <Link href='/'
             className='mb-12
-            cursoe-pointer flex
+            cursor-pointer flex
             items-center gap-1'>
             <Image 
             src='/icons/logo.svg'
