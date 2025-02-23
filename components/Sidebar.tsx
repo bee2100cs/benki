@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import Footer from './Footer'
 
-const Sidebar = ({ user }: SiderbarProps) => {
+const Sidebar = ({ user }: SidebarProps) => {
     const pathName = usePathname();
   return (
     <section className='sidebar'>
